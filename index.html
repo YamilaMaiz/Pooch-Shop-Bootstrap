@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section class="hero">
-    <nav class="navbar navbar-expand-lg">
+
+    <!-- MENÚ -->
+    <section>
+    <main class="hero">
+    <nav class="container-fluid navbar navbar_bg navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
             <img src="./img/Logo.png" alt="">
@@ -59,6 +62,11 @@
                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg></a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg></a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
@@ -67,15 +75,20 @@
           </div>
         </div>
       </nav>
-      <div class="text d-flex flex-sm-column justify-content-center ms-5">
-        <h2>Lo mejor para tu <br> mascota a tan solo un</h2>
+
+      <!-- TITULO PRINCIPAL -->
+      <div class="text d-flex flex-sm-column justify-content-center ms-5" style="width: 40%  ;">
+        <h2>Encontra los mejores productos ahora al alcance de su mano con tan solo un</h2>
         <a class="btn btn-outline btn-lg" href="#!">Click</a>
       </div>
     </section>
     <br>
-    <section class="d-flex justify-content-center align-items-center">
-        <h3 class="text-black p-3 rounded">Suplemento para mascotas</h3>
+
+    <!-- CATEGORIAS -->
+    <section class="d-flex flex-column justify-content-center align-items-center ">
+        <h3 class="text-black p-1 rounded">Nuestras categorias</h3>
     </section>
+    <br>
     <section class="container">
         <div class="row mt-2">
             <div class="col-md-4"><div class="card mb-3" style="max-width: 540px;">
@@ -178,15 +191,19 @@
     </section>
     <br>
     <br>
-    <section class="d-flex justify-content-center align-items-center flex-column">
-        <h3 class="text-black p-3 rounded">REGISTRATE AL NEWSLETTER Y RECIBÍ CUPONES DE DESCUENTO!</h3>
-        <div class="d-flex flex-row col-6 mb-3">
-            <input type="email" class="form-control justify-content-center" id="exampleFormControlInput1" placeholder="Ingresá tu email">
+    <div class="newsletter-subscribe mt-5 container">
+      <div class="container">
+          <div class="intro">
+              <h2 class="text-center newsletter">REGISTRATE AL NEWSLETTER
+              </h2>
+              <p class="text-center">y recibe un cupón de %20 de descuento por la primera compra!</p>
           </div>
-          <div class="d-grid gap-2 col-2 mx-auto">
-            <button class="suscribir btn btn-primary" type="button">¡Suscribirme!</button>
-          </div>
-    </section>
+          <form class="form-inline" method="post">
+              <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Dirección de correo electrónico"></div>
+              <div class="form-group"><button class="btn btn-primary" type="button">Suscribir </button></div>
+          </form>
+      </div>
+  </div>
     <br>
     <br>
     <br>
@@ -195,22 +212,26 @@
       <div class="container text-center">
         <div class="row">
           <div class="d-flex flex-column col align-items-center">
-            <img src="../Página-Web-CoderHouse/img/camion.png" alt="" class="envio">
+            <img src="./img/camion.png" alt="" class="envio">
             ENVÍOS A TODO EL PAÍS <br> COMPRÁ SIN SALIR DE TU CASA
           </div>
           <div class="d-flex flex-column col order-5 align-items-center">
-            <img src="../Página-Web-CoderHouse/img/tarjeta.png" alt="" class="envio">
+            <img src="./img/tarjeta.png" alt="" class="envio">
             COMPRA SEGURA <br> PROTEGEMOS TUS DATOS
           </div>
           <div class="d-flex flex-column col order-1 align-items-center">
-            <img src="../Página-Web-CoderHouse/img/candado.png" alt="" class="envio">
+            <img src="./img/candado.png" alt="" class="envio">
             3 y 6 CUOTAS SIN INTERÉS <br> CON TODAS LAS TARJETAS
           </div>
         </div>
       </div>
     </section>
+    <br>
+    <br>
+    <br>
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-muted" style="background-color: rgba(245, 245, 220, 0.734);">
+        <footer class="text-center text-lg-start text-muted" style="background-color: #e7c8a0a3;">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -222,16 +243,16 @@
         <!-- Right -->
         <div class="d-flex justify-content-center align-items-center flex-row">
           <a href="#" class="me-4 text-reset">
-            <img src="../Página-Web-CoderHouse/img/facebook.png" alt="" class="red">
+            <img src="./img/facebook.png" alt="" class="red">
           </a>
           <a href="#" class="me-4 text-reset">
-            <img src="../Página-Web-CoderHouse/img/instagram.png" alt="" class="red">
+            <img src="./img/instagram.png" alt="" class="red">
           </a>
           <a href="#" class="me-4 text-reset">
-            <img src="../Página-Web-CoderHouse/img/twitter.png" alt="" class="red">
+            <img src="./img/twitter.png" alt="" class="red">
           </a>
           <a href="#" class="me-4 text-reset">
-            <img src="../Página-Web-CoderHouse/img/whatsapp.png" alt="" class="red">
+            <img src="./img/whatsapp.png" alt="" class="red">
           </a>
         </div>
         <!-- Right -->
@@ -270,10 +291,10 @@
                 <i class="fas fa-gem me-3"></i>Medios de pago
               </h6>
               <p class="d-flex justify-content-between flex-row">
-                <img src="../Página-Web-CoderHouse/img/american-express.png" alt="" class="medios">
-                <img src="../Página-Web-CoderHouse/img/visa.png" alt="" class="medios">
-                <img src="../Página-Web-CoderHouse/img/paypal.png" alt="" class="medios">
-                <img src="../Página-Web-CoderHouse/img/mastercard.png" alt="" class="medios">
+                <img src="./img/american-express.png" alt="" class="medios">
+                <img src="./img/visa.png" alt="" class="medios">
+                <img src="./img/paypal.png" alt="" class="medios">
+                <img src="./img/mastercard.png" alt="" class="medios">
               </p>
             </div>
     
