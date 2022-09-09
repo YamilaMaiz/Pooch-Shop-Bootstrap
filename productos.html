@@ -4,272 +4,652 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pooch Shop</title>
+    <title>Productos - PoochShop</title>
+    <meta name="keywords" content="Pet Shop, Mascotas, Ropa para mascotas, Accesorios para mascotas, Alimentos,">
+    <script src="https://kit.fontawesome.com/5e7ea5dc2c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-
-    <!-- MENÚ -->
-    <section>
+    <header>
+        <section>
+            <nav class="navbar nav-bg navbar-expand-lg p-0">
+                <div class="container-fluid mt-3 mb-3">
+                  <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./mas-informacion.html">+Info</a>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn position-relative btn-transparent">
+                          <a href="./carrito.html">Carrito
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                              4
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </a>
+                        </button>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <div class="shop_btn btn-group">
+                            <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary">Productos</a></button>
+                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                              <li><a class="dropdown-item" href="#">Ropa</a></li>
+                              <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                              <li><a class="dropdown-item" href="#">Collares</a></li>
+                              <li><a class="dropdown-item" href="#">Comederos</a></li>
+                              <li><a class="dropdown-item" href="#">Camas</a></li>
+                              <li><a class="dropdown-item" href="#">Correas</a></li>
+                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                              <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            </ul>
+                        </li>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./mi-cuenta.html" class="nav-link">Mi Cuenta</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
+                      <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </section>
+    </header>
     <main>
-    <nav class="navbar navbar_bg navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/Logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./productos.html">Ver todo</a></li>
-                  <li><a class="dropdown-item" href="#">Conjuntos</a></li>
-                  <li><a class="dropdown-item" href="#">Ropa</a></li>
-                  <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                  <li><a class="dropdown-item" href="#">Collares y pretales</a></li>
-                  <li><a class="dropdown-item" href="#">Comederos y bebederos</a></li>
-                  <li><a class="dropdown-item" href="#">Camas y moises</a></li>
-                  <li><a class="dropdown-item" href="#">Correas</a></li>
-                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                  <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./mas-info.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  +Info
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
-                  <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
-                  <li><a class="dropdown-item" href="#">Devoluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./iniciar-sesion.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        <section class="container-fluid p-5 container-shop">
+            <div class="row flex-nowrap">
+                <div class="col-3 container_shop d-flex flex-column">
+                    <div class="row">
+                        <p class="h5 pt-3 ps-3" style="font-size: 25px;">
+                            Categorias
+                        </p>
+                    </div>
+                    <div class="row ps-4 pb-5 d-flex flex-wrap">
+                      <p class="categories"></p>
+                        <!-- Default checked radio -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                          <label class="form-check-label" for="flexRadioDefault2">Todas las categorias</label>
+                        </div>
+                        <!-- Default radio -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Ropa</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Conjuntos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Alimentos</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Collares y Pretales</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                            <label class="form-check-label" for="flexRadioDefault1">Camas y Moises</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Correas</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Accesorios</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Ofertas</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <p class="h5 pt-3 ps-3" style="font-size: 25px;">
+                          Filtros
+                      </p>
+                    </div>
+                    <div class="row">
+                      <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                          Precio
+                      </p>
+                    </div>
+                    <div class="container-fluid">
+                        <label for="customRange1" class="form-label">0 - 5000$</label>
+                        <input type="range" class="form-range" id="customRange1">
+                        <button type="button" class="btn btn_art btn-sm">Aplicar</button>
+                      </div>
+                      <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Más relevantes</option>
+                          <option value="1">Mayor precio</option>
+                          <option value="2">Menor precio</option>
+                          <option value="3">Ordenar A-Z</option>
+                        </select>
+                        <label for="floatingSelect">Ordenar por :</label>
+                      </div>
+                      <div class="row">
+                        <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                            Talle
+                        </p>
+                      </div>
+                      <div class="row">
+                        <p class="h5 pt-3 ps-3" style="font-size: 25px;">
+                            Destacados
+                        </p>
+                      </div>
+                      <div class="row rounded justify-content-center align-items-center d-flex flex-wrap  ">
+                          <div class="row d-flex justify-content-center align-items-center ">
+                            <div class="product-grid2" style="height: 250px; width: 250px;">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./img/producto-lateral1.png">
+                                        <img class="pic-2" src="./img/producto-lateral1-2.png">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg></i></a></li>
+                                        
+                                        <li><a href="#" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg></a></li>
+                                    </ul> 
+                                  </div> 
+                              </div>
+                              <div class="product-grid2" style="height: 250px; width: 250px;">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./img/producto-lateral2.png">
+                                        <img class="pic-2" src="./img/producto-lateral2-2.png">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg></i></a></li>
+                                        
+                                        <li><a href="#" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg></a></li>
+                                    </ul> 
+                                  </div> 
+                              </div>
+                              <div class="product-grid2" style="height: 250px; width: 250px;">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./img/producto-lateral3.png">
+                                        <img class="pic-2" src="./img/producto-lateral3-2.png">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg></i></a></li>
+                                        
+                                        <li><a href="#" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg></a></li>
+                                    </ul> 
+                                  </div> 
+                              </div>
+                              <div class="product-grid2" style="height: 250px; width: 250px;">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./img/producto-lateral4.png">
+                                        <img class="pic-2" src="./img/producto-lateral4-2.png">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg></i></a></li>
+                                        
+                                        <li><a href="#" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg></a></li>
+                                    </ul> 
+                                  </div> 
+                              </div>
+                          </div>
+                      </div> 
+                 </div>
+                 <div class="col-9 container-fluid d-flex flex-wrap justify-content-between pt-5">
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto1.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto1-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714); font-size: 20px;">Cama clásica moderna</a></h3>
+                              <span class="price">$22.800</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto2.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto2-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);">Pantalón de mezclilla</a></h3>
+                              <span class="price">$4.380</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto3.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto3-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Impermeable Dogle Incort</a></h3>
+                              <span class="price">$5.980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto4.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto4-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Peto de calabaza</a></h3>
+                              <span class="price">$4.580</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto5.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto5-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Botella de agua móvil</a></h3>
+                              <span class="price">$3.500</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto6.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto6-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Arnés de cuero y lino</a></h3>
+                              <span class="price">$3.980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto7.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto7-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Tazón plegable</a></h3>
+                              <span class="price">$980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto8.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto8-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Cama Herinbone</a></h3>
+                              <span class="price">$7.980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto9.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto9-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Mochila con arnés</a></h3>
+                              <span class="price">$5.480</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto10.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto10-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Cama 3 posiciones</a></h3>
+                              <span class="price">$7.580</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto11.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto11-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Albornoz con capucha</a></h3>
+                              <span class="price">$2.830</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto12.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto12-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Peluche de perro</a></h3>
+                              <span class="price">$1.980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto13.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto13-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Comedero con suministro de agua</a></h3>
+                              <span class="price">$4.980</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 430px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto14.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto14-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Impermeable</a></h3>
+                              <span class="price">$4.780</span>
+                          </div>
+                      </div>
+                      <div class="product-grid2" style="height: 350px;">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="./img/producto15.png" style="height: 330px  ;">
+                                <img class="pic-2" src="./img/producto15-2.png" style="height: 330px ;">
+                            </a>
+                            <ul class="social">
+                                <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg></i></a></li>
+                                
+                                <li><a href="./carrito.html" data-tip="Añadir al carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg></a></li>
+                            </ul>
+                           
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Abrigo Checkbo daffle</a></h3>
+                              <span class="price">$6.800</span>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<!-- PRODUCTOS -->
-<div class="container">
+    <!-- FOOTER -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
     
-  <div class="row">
-      
-      <div class="col-md-4 col-sm-6">
-          <div class="product-grid2">
-              <div class="product-image2">
-                  <a href="#">
-
-                      <img class="pic-1" src="./img/producto1.png">
-                      <img class="pic-2" src="./img/producto1-2.png">
-                  </a>
-                  <ul class="social">
-                      <li><a href="#" data-tip="Quick View"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                      </svg></a></li>
-                      
-                      <li><a href="#" data-tip="Add to Cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg></i></a></li>
-                  </ul>
-                  
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Women's Top</a></h3>
-                  <span class="price">Rs 400</span>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-          <div class="product-grid2">
-            <div class="product-image2">
-                <a href="#">
-                    <img class="pic-1" src="./img/producto2.png">
-                    <img class="pic-2" src="./img/producto2-2.png">
-                </a>
-                <ul class="social">
-                    <li><a href="#" data-tip="Quick View"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                    </svg></i></a></li>
-                    
-                    <li><a href="#" data-tip="Add to Cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </svg></i></a></li>
-                </ul>
-               
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Women's Top</a></h3>
-                  <span class="price">Rs 450</span>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-          <div class="product-grid2">
-            <div class="product-image2">
-                <a href="#">
-                    <img class="pic-1" src="./img/producto3.png">
-                    <img class="pic-2" src="./img/producto3-2.png">
-                </a>
-                <ul class="social">
-                    <li><a href="#" data-tip="Quick View"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                    </svg></i></a></li>
-                    
-                    <li><a href="#" data-tip="Add to Cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </svg></a></li>
-                </ul>
-               
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Women's Top</a></h3>
-                  <span class="price">Rs 500</span>
-              </div>
-          </div>
-      </div>
-           </div>
-      </div>
-
-<hr>
-
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
     
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
 
-
-
-
-
-
-
-
-<!-- FOOTER -->
-<footer class="text-center text-lg-start text-muted" style="background-color: #e7c8a0a3;">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Conéctese con nosotros en las redes sociales:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div class="d-flex justify-content-center align-items-center flex-row">
-      <a href="#" class="me-4 text-reset">
-        <img src="./img/facebook.png" alt="" class="red">
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <img src="./img/instagram.png" alt="" class="red">
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <img src="./img/twitter.png" alt="" class="red">
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <img src="./img/whatsapp.png" alt="" class="red">
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Enlaces Útiles
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Botón de arrepentimiento</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">¿Cómo comprar?</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Preguntas frecuentes</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Ayuda</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Medios de pago
-          </h6>
-          <p class="d-flex justify-content-between flex-row">
-            <img src="./img/american-express.png" alt="" class="medios">
-            <img src="./img/visa.png" alt="" class="medios">
-            <img src="./img/paypal.png" alt="" class="medios">
-            <img src="./img/mastercard.png" alt="" class="medios">
-          </p>
-        </div>
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-          </svg><i class="fas fa-home me-3"></i>Av. Rivadavia 2345 - Bs. As</p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-            </svg>
-            <i class="fas fa-envelope me-3"></i>
-            poochshop.ventas@gmail.com
-          </p>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-          </svg><i class="fas fa-phone me-3"></i>1178945612</p>
-        </div>
-        <!-- Grid column -->
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+        <section class="container-fluid d-flex justify-content-center align-items-center mb-4">
+          <img src="./img/logo.png" style="height: 40px;" alt="">
+        </section>
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+      <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright: Todos los derechos son reservados
-  </div>
-  <!-- Copyright -->
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <!-- Copyright -->
+      <div class="text-center text-dark pb-4" style="background-color: #f1f1f1; font-size: 12px;">
+        © 
+        <a class="text-dark" href="https://poochshop.com/">PoochShop.com</a>
+        2022 Todos los derechos son reservados
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+$redes: (
+    facebook-f: #4267B2,
+    instagram:#E1306C,
+    google: #DB4437,
+    twitter:#1DA1F2,
+    whatsapp:#25D366
+);
+@each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+        background-color: $color;
+    }
+}
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+.fa-facebook-f {
+    display: flex;
+    @include flex(center, center);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+.fa-instagram {
+    display: flex;
+    @include flex(center, center);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+.fa-google {
+    display: flex;
+    @include flex(center, center);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+.fa-twitter {
+    display: flex;
+    @include flex(center, center);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+.fa-whatsapp {
+    display: flex;
+    @include flex(center, center);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #25D366;
+    }
+}
+.suscribe {
+    width: 100px;
+    @extend .fa-instagram
+}
+.iniciar .btn {
+    background-color: map-get($redes,facebook-f);
+}
