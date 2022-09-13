@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 770px) {
+    /** INDEX **/
+    /* CARDS INDEX */
+    .card-title{
+        font-size: 15px;
+        text-align: center;
+    }
+    .card-text{
+        display: none !important;
+    }
+    /* GRID INDEX */
+    .grid-pooch {
+        height: 460px;
+        margin: auto;
+    }
+    /* SUSCRIBITE INDEX */
+    .descuento-text {
+        font-size: 15px !important;
+    }
+    /* ENVIOS, TARJETA, COMPRA INDEX */
+    .envio-original {
+        display: none !important;
+    }
+    .envio-medias {
+        display: flex !important;
+    }
+    /** +INFO **/
+    /* CONTENEDOR +INFO */
+    .contenedor-masinfo {
+        flex-direction: column;
+    }
+    .col-faqs{
+        width: 100%;
+    }
+    .col-form{
+        width: 100%;
+        padding-top: 15px ;
+    }
+    /** CARRITO **/
+    /* CONTENEDOR CARRITO */
+    .container_shop{
+        display: none !important;
+
+    }
+    .contenedor-cart{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-carro {
+        height: 90px !important;
+    }
+    .resumen-cart{
+        width: 100%;
+    }
+    .carrito-text {
+        display: flex;
+        flex-direction: column;
+    }   
+    /** PRODUCTOS **/
+    /* FILTRO DESPLEGABLE PRODUCTOS */
+    .filtro-original {
+        display: none;
+    }
+    .filtro-desplegable {
+        display: flex;
+    }
+    .orden {
+        display: flex;
+    }
+}
+
+/** PRODUCTOS **/
+@media screen and (max-width:990px){
+    .product-grid2{
+        margin-bottom:30px
+    }
+}

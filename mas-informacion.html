@@ -11,69 +11,81 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body class="bg-info">
-    <header >
+    <header>
+      <!-- MENÚ DE NAVEGACIÓN -->
         <section>
-            <nav class="navbar nav-bg navbar-expand-lg p-0">
-                <div class="container-fluid mt-3 mb-3">
-                  <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./mas-informacion.html">+Info</a>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="btn position-relative btn-transparent">
-                          <a href="./carrito.html">Carrito
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                              4
-                              <span class="visually-hidden">unread messages</span>
-                            </span>
-                          </a>
+          <nav class="navbar nav-bg navbar-expand-lg p-0">
+            <div class="container-fluid mt-3 mb-3">
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html" style="color: rgba(0, 0, 0, 0.601);">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="shop_btn btn-group">
+                        <button type="button" class="btn text-secondary"><a href="./mas-informacion.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">+Info</a></button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./mas-informacion.html">Preguntas frecuentes</a></li>
+                          <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
+                          <li><a class="dropdown-item" href="#">Devoluciones</a></li>
+                          <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <div class="shop_btn btn-group">
+                          <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">Productos</a></button>
+                          <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Jueguetes</a></li>
+                            <li><a class="dropdown-item" href="#">Collares</a></li>
+                            <li><a class="dropdown-item" href="#">Comederos</a></li>
+                            <li><a class="dropdown-item" href="#">Camas</a></li>
+                            <li><a class="dropdown-item" href="#">Correas</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                          </ul>
                       </li>
-                      <li class="nav-item dropdown">
-                        <div class="shop_btn btn-group">
-                            <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary">Productos</a></button>
-                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Conjuntos</a></li>
-                              <li><a class="dropdown-item" href="#">Ropa</a></li>
-                              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                              <li><a class="dropdown-item" href="#">Collares</a></li>
-                              <li><a class="dropdown-item" href="#">Comederos</a></li>
-                              <li><a class="dropdown-item" href="#">Camas</a></li>
-                              <li><a class="dropdown-item" href="#">Correas</a></li>
-                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                              <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                            </ul>
-                        </li>
-                      </li>
-                      <li class="nav-item">
-                        <a href="./mi-cuenta.html" class="nav-link">Mi Cuenta</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
-                      <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg></button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./mi-cuenta.html" class="nav-link" style="color: rgba(0, 0, 0, 0.601);">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn position-relative btn-transparent">
+                        <a href="./carrito.html" style="color: rgba(0, 0, 0, 0.601);">Carrito
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                            4
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+                      </button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
+                  <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </section>
     </header>
+    <!-- PREGUNTAS FRECUENTES +INFO -->
     <main class="container rounded d-flex justify-content-center bg-white boder border-success p-2 border-opacity-10 flex-wrap contenedor-info">
-        <section class="container-fluid row mt-4 d-flex">
-            <div class="col-6">
+        <section class="container-fluid row mt-4 d-flex contenedor-masinfo">
+            <div class="col-6 col-faqs">
                 <div class="row mb-2"><h4>Preguntas frecuentes</h4
                     ></div>
                 <div class="row mt-3">
@@ -146,7 +158,8 @@
                       </div>
                 </div>
             </div>
-            <div class="col-6">
+            <!-- FORMULARIO +INFO -->
+            <div class="col-6 col-form">
                 <div class="row mb-2"><h4>Envianos tu consulta</h4></div>
                 <div class="row mt-4">
                     <form>

@@ -11,71 +11,83 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body class="bg-light">
-    <header >
+    <header>
+      <!-- MENÚ DE NAVEGACIÓN -->
         <section>
-            <nav class="navbar nav-bg navbar-expand-lg p-0">
-                <div class="container-fluid mt-3 mb-3">
-                  <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./mas-informacion.html">+Info</a>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="btn position-relative btn-transparent">
-                          <a href="./carrito.html">Carrito
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                              4
-                              <span class="visually-hidden">unread messages</span>
-                            </span>
-                          </a>
+          <nav class="navbar nav-bg navbar-expand-lg p-0">
+            <div class="container-fluid mt-3 mb-3">
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html" style="color: rgba(0, 0, 0, 0.601);">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="shop_btn btn-group">
+                        <button type="button" class="btn text-secondary"><a href="./mas-informacion.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">+Info</a></button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./mas-informacion.html">Preguntas frecuentes</a></li>
+                          <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
+                          <li><a class="dropdown-item" href="#">Devoluciones</a></li>
+                          <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <div class="shop_btn btn-group">
+                          <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">Productos</a></button>
+                          <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Jueguetes</a></li>
+                            <li><a class="dropdown-item" href="#">Collares</a></li>
+                            <li><a class="dropdown-item" href="#">Comederos</a></li>
+                            <li><a class="dropdown-item" href="#">Camas</a></li>
+                            <li><a class="dropdown-item" href="#">Correas</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                          </ul>
                       </li>
-                      <li class="nav-item dropdown">
-                        <div class="shop_btn btn-group">
-                            <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary">Productos</a></button>
-                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Conjuntos</a></li>
-                              <li><a class="dropdown-item" href="#">Ropa</a></li>
-                              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                              <li><a class="dropdown-item" href="#">Collares</a></li>
-                              <li><a class="dropdown-item" href="#">Comederos</a></li>
-                              <li><a class="dropdown-item" href="#">Camas</a></li>
-                              <li><a class="dropdown-item" href="#">Correas</a></li>
-                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                              <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                            </ul>
-                        </li>
-                      </li>
-                      <li class="nav-item">
-                        <a href="./mi-cuenta.html" class="nav-link">Mi Cuenta</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
-                      <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg></button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./mi-cuenta.html" class="nav-link" style="color: rgba(0, 0, 0, 0.601);">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn position-relative btn-transparent">
+                        <a href="./carrito.html" style="color: rgba(0, 0, 0, 0.601);">Carrito
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                            4
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+                      </button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
+                  <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </section>
     </header>
+    <!-- CARRITO -->
     <main class="margin_shop">
         <section class="container rounded bg-light mb-5">
-            <div class="row mt-5">
+            <div class="row mt-5 contenedor-cart">
                 <div class="col-8">
-                    <div class="container-fluid d-flex align-items-center justify-content-around pt-4 pb-4 border-bottom">
+                    <div class="carrito-text container-fluid d-flex align-items-center justify-content-around pt-4 pb-4 border-bottom">
                         <div class="d-flex">
                             <h2>Carrito de compras</h2>
                         </div>
@@ -83,94 +95,95 @@
                             <p class="m-0">Tenés 4 artículos en tu carrito</p>
                         </div>
                     </div>
+                    <!-- PRODUCTOS CARRITO -->
                     <div class="container-fluid">
                         <div class="mt-5 mb-5 ">
                             <article class="d-flex justify-content-around mt-4 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded shadow-sm " src="./img/producto5.png" alt="" style="height:150px ;">
-                                    <p class="ms-3 mb-0">Box desayuno para 2</p>
+                                    <img class="img-carro rounded shadow-sm " src="./img/producto5-3.png" alt="" style="height:150px ;">
+                                    <p class="ms-4 mb-0">Botella de agua móvil</p>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex rounded border justify-content-between p-2">
                                         <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"><b>-</b> </button>
                                         </div>
                                         <div class="d-flex ms-3 me-3">
                                             <p class="m-0 d-flex align-items-center">1</p>
                                         </div>
                                         <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
+                                            <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"">+</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <p class="m-0"> <b>$1950</b></p>
+                                    <p class="m-0"> <b>$3.500</b></p>
                                 </div>
                             </article>
                             <article class="d-flex justify-content-around pt-4 pb-4 border-top">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded shadow-sm " src="./img/producto9.png" alt="" style="height:150px ;">
-                                    <p class="ms-5 mb-0">Pan de Queso</p>
+                                    <img class="img-carro rounded shadow-sm " src="./img/producto9.png" alt="" style="height:150px ;">
+                                    <p class="ms-4 mb-0">Mochila con arnés</p>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex rounded border justify-content-between p-2">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
-                                        </div>
-                                        <div class="d-flex ms-3 me-3">
-                                            <p class="m-0 d-flex align-items-center">4</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <p class="m-0"> <b>$980</b></p>
-                                </div>
-                            </article>
-                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded shadow-sm" src="./img/producto-lateral2.png" alt="" style="height:150px ;">
-                                    <p class="ms-5 mb-0">Budin Relleno</p>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex rounded border justify-content-between p-2">
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
-                                        </div>
-                                        <div class="d-flex ms-3 me-3">
-                                            <p class="m-0 d-flex align-items-center">1</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <p class="m-0"> <b>$1050</b></p>
-                                </div>
-                            </article>
-                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
-                              <div class="d-flex align-items-center">
-                                  <img class="rounded shadow-sm" src="./img/producto1.png" alt="" style="height:150px ;">
-                                  <p class="ms-5 mb-0">Budin Relleno</p>
-                              </div>
-                              <div class="d-flex align-items-center">
                                   <div class="d-flex rounded border justify-content-between p-2">
                                       <div class="d-flex">
-                                          <button class="btn btn-primary" style="height: 40px ; width: 40px;"><b>-</b> </button>
+                                          <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"><b>-</b> </button>
                                       </div>
                                       <div class="d-flex ms-3 me-3">
                                           <p class="m-0 d-flex align-items-center">1</p>
                                       </div>
                                       <div class="d-flex">
-                                          <button class="btn btn-primary" style="height: 40px ; width: 40px;">+</button>
+                                          <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;">+</button>
                                       </div>
                                   </div>
                               </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> <b>$5.480</b></p>
+                                </div>
+                            </article>
+                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-carro rounded shadow-sm" src="./img/producto-lateral2.png" alt="" style="height:150px ;">
+                                    <p class="ms-4 mb-0">Conjunto Link Corde</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <div class="d-flex rounded border justify-content-between p-2">
+                                      <div class="d-flex">
+                                          <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"><b>-</b> </button>
+                                      </div>
+                                      <div class="d-flex ms-3 me-3">
+                                          <p class="m-0 d-flex align-items-center">1</p>
+                                      </div>
+                                      <div class="d-flex">
+                                          <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"">+</button>
+                                      </div>
+                                  </div>
+                              </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> <b>$8.800</b></p>
+                                </div>
+                            </article>
+                            <article class="d-flex justify-content-around pt-4 pb-4 border-top">
                               <div class="d-flex align-items-center">
-                                  <p class="m-0"> <b>$1050</b></p>
+                                  <img class="img-carro rounded shadow-sm" src="./img/producto1.png" alt="" style="height:150px ;">
+                                  <p class="ms-4 mb-0">Cama clásica moderna</p>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <div class="d-flex rounded border justify-content-between p-2">
+                                    <div class="d-flex">
+                                        <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"><b>-</b> </button>
+                                    </div>
+                                    <div class="d-flex ms-3 me-3">
+                                        <p class="m-0 d-flex align-items-center">1</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-primary" style="height: 40px ; width: 40px; background-color: rgba(128, 128, 128, 0.545); border-color: transparent;"">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="d-flex align-items-center">
+                                  <p class="m-0"> <b>$22.800</b></p>
                               </div>
                             </article>
                         </div>
@@ -179,14 +192,15 @@
                         <p><a href="./productos.html" class="text-dark">← Volver a la tienda</a></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <!-- RESUMEN CARRITO -->
+                <div class="col-4 resumen-cart">
                     <div class="container mt-4 pb-5 rounded-end resumen">
                         <div class="container pt-5 pb-3 border-bottom ">
                             <h5><b>Resumen</b></h5>
                         </div>
                         <div class="container d-flex justify-content-between mt-4">
                             <h6><b>Subtotal</b></h6>
-                            <p>$</p>
+                            <p>$40.580</p>
                         </div>
                         <div class="container pt-3">
                             <div>
@@ -215,7 +229,7 @@
                             </div>
                             <div class="container d-flex justify-content-between pt-5">
                                 <h6><b>Total</b></h6>
-                                <p>$</p>
+                                <p>$40.580</p>
                             </div>
                             <div class="container pt-3">
                                 <div class="d-grid gap-2">

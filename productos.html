@@ -12,67 +12,211 @@
 </head>
 <body>
     <header>
+      <!-- MENÚ DE NAVEGACIÓN -->
         <section>
-            <nav class="navbar nav-bg navbar-expand-lg p-0">
-                <div class="container-fluid mt-3 mb-3">
-                  <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./mas-informacion.html">+Info</a>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="btn position-relative btn-transparent">
-                          <a href="./carrito.html">Carrito
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                              4
-                              <span class="visually-hidden">unread messages</span>
-                            </span>
-                          </a>
+          <nav class="navbar nav-bg navbar-expand-lg p-0">
+            <div class="container-fluid mt-3 mb-3">
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html" style="color: rgba(0, 0, 0, 0.601);">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="shop_btn btn-group">
+                        <button type="button" class="btn text-secondary"><a href="./mas-informacion.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">+Info</a></button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./mas-informacion.html">Preguntas frecuentes</a></li>
+                          <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
+                          <li><a class="dropdown-item" href="#">Devoluciones</a></li>
+                          <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <div class="shop_btn btn-group">
+                          <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">Productos</a></button>
+                          <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Jueguetes</a></li>
+                            <li><a class="dropdown-item" href="#">Collares</a></li>
+                            <li><a class="dropdown-item" href="#">Comederos</a></li>
+                            <li><a class="dropdown-item" href="#">Camas</a></li>
+                            <li><a class="dropdown-item" href="#">Correas</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                          </ul>
                       </li>
-                      <li class="nav-item dropdown">
-                        <div class="shop_btn btn-group">
-                            <button type="button" class="btn text-secondary"><a href="./productos.html" class="text-secondary">Productos</a></button>
-                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Conjuntos</a></li>
-                              <li><a class="dropdown-item" href="#">Ropa</a></li>
-                              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                              <li><a class="dropdown-item" href="#">Collares</a></li>
-                              <li><a class="dropdown-item" href="#">Comederos</a></li>
-                              <li><a class="dropdown-item" href="#">Camas</a></li>
-                              <li><a class="dropdown-item" href="#">Correas</a></li>
-                              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                              <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                            </ul>
-                        </li>
-                      </li>
-                      <li class="nav-item">
-                        <a href="./mi-cuenta.html" class="nav-link">Mi Cuenta</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
-                      <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg></button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./mi-cuenta.html" class="nav-link" style="color: rgba(0, 0, 0, 0.601);">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn position-relative btn-transparent">
+                        <a href="./carrito.html" style="color: rgba(0, 0, 0, 0.601);">Carrito
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                            4
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+                      </button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="background-color: transparent;">
+                  <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </section>
     </header>
     <main>
+      <!-- CATEGORIAS PRODUCTOS TEXTO-->
         <section class="container-fluid p-5 container-shop">
+            <div class="filtro-desplegable row flex-nowrap align-items-center">
+              <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-filter pe-1"></i>Filtros</button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtros</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <div class="row">
+                      <p class="h5 pt-3 ps-3" style="font-size: 25px;">
+                          Categorias
+                      </p>
+                  </div>
+                  <!-- CATEGORIAS PRODUCTOS -->
+                  <div class="row ps-4 pb-2 d-flex flex-wrap">
+                    <p class="categories"></p>
+                      <!-- Default checked radio -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                        <label class="form-check-label" for="flexRadioDefault2">Todas las categorias</label>
+                      </div>
+                      <!-- Default radio -->
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Ropa</label>
+                        </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Conjuntos</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Alimentos</label>
+                        </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Collares y Pretales</label>
+                        </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                          <label class="form-check-label" for="flexRadioDefault1">Camas y Moises</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        <label class="form-check-label" for="flexRadioDefault1">Correas</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        <label class="form-check-label" for="flexRadioDefault1">Accesorios</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        <label class="form-check-label" for="flexRadioDefault1">Ofertas</label>
+                      </div>
+                  </div>
+                  <!-- FILTROS -->
+                  <div class="row">
+                    <p class="h5 pt-3 ps-3" style="font-size: 25px;">
+                        Filtros
+                    </p>
+                  </div>
+                  <!-- PRECIO -->
+                  <div class="row">
+                    <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                        Precio
+                    </p>
+                  </div>
+                  <div class="container-fluid">
+                      <div class="card-body">
+                        <input type="range" class="custom-range" min="0" max="100" name="" style="width: 250px;">
+                        <div class="d-flex form-row pe-1">
+                          <div class="form-group">
+                            <label>Min</label>
+                            <input class="form-control" placeholder="$0" type="number">
+                          </div>
+                          <div class="form-group ps-1" style="text-align: right;">
+                            <label>Max</label>
+                            <input class="form-control" placeholder="$1,0000" type="number">
+                          </div>
+                        </div>  
+                        <a href="#" class="d-flex justify-content-center btn m-3" data-abc="true" style="background-color: black; color: white;">Aplicar</a>
+                      </div>
+                      
+                  </div>
+                    <!-- TALLE -->
+                    <div class="row">
+                      <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                          Talle
+                      </p>
+                      <div class="row d-flex">
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XXS (-00)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XS (-0)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">S (0)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">M (1)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">L (2)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XL (3)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XXL (4)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">3XL (5)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">4XL (6)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">5XL (7)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">6XL (8)</button>
+                        <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">7XL (9)</button>
+                      </div>
+                    </div>
+                    <!-- COLOR -->
+                    <div class="row">
+                      <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                          Color
+                      </p>
+                      <div class="row d-flex">
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #443742; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #846C5B; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CEA07E; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #EDD9A3; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #E2E8C0; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: white; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CB997E; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #DDBEA9; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #FFE8D6; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #B7B7A4; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #A5A58D; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #6B705C; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #FFE6A7; height: 30px; width: 30px;"></button>
+                        <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CC9F69; height: 30px; width: 30px;"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row flex-nowrap">
                 <div class="col-3 container_shop d-flex flex-column">
                     <div class="row">
@@ -80,7 +224,8 @@
                             Categorias
                         </p>
                     </div>
-                    <div class="row ps-4 pb-5 d-flex flex-wrap">
+                    <!-- CATEGORIAS PRODUCTOS -->
+                    <div class="row ps-4 pb-2 d-flex flex-wrap">
                       <p class="categories"></p>
                         <!-- Default checked radio -->
                         <div class="form-check">
@@ -121,35 +266,78 @@
                           <label class="form-check-label" for="flexRadioDefault1">Ofertas</label>
                         </div>
                     </div>
+                    <!-- FILTROS -->
                     <div class="row">
                       <p class="h5 pt-3 ps-3" style="font-size: 25px;">
                           Filtros
                       </p>
                     </div>
+                    <!-- PRECIO -->
                     <div class="row">
                       <p class="h5 pt-3 ps-3" style="font-size: 18px;">
                           Precio
                       </p>
                     </div>
                     <div class="container-fluid">
-                        <label for="customRange1" class="form-label">0 - 5000$</label>
-                        <input type="range" class="form-range" id="customRange1">
-                        <button type="button" class="btn btn_art btn-sm">Aplicar</button>
-                      </div>
-                      <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>Más relevantes</option>
-                          <option value="1">Mayor precio</option>
-                          <option value="2">Menor precio</option>
-                          <option value="3">Ordenar A-Z</option>
-                        </select>
-                        <label for="floatingSelect">Ordenar por :</label>
-                      </div>
+                        <div class="card-body">
+                          <input type="range" class="custom-range" min="0" max="100" name="" style="width: 250px;">
+                          <div class="d-flex form-row pe-1">
+                            <div class="form-group">
+                              <label>Min</label>
+                              <input class="form-control" placeholder="$0" type="number">
+                            </div>
+                            <div class="form-group ps-1" style="text-align: right;">
+                              <label>Max</label>
+                              <input class="form-control" placeholder="$1,0000" type="number">
+                            </div>
+                          </div>  
+                          <a href="#" class="d-flex justify-content-center btn m-3" data-abc="true" style="background-color: black; color: white;">Aplicar</a>
+                        </div>
+                        
+                    </div>
+                      <!-- TALLE -->
                       <div class="row">
                         <p class="h5 pt-3 ps-3" style="font-size: 18px;">
                             Talle
                         </p>
+                        <div class="row d-flex">
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XXS (-00)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XS (-0)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">S (0)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">M (1)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">L (2)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XL (3)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">XXL (4)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">3XL (5)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">4XL (6)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">5XL (7)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">6XL (8)</button>
+                          <button class="m-1" style="height: 30px; width: 100px; border-radius: 5px;">7XL (9)</button>
+                        </div>
                       </div>
+                      <!-- COLOR -->
+                      <div class="row">
+                        <p class="h5 pt-3 ps-3" style="font-size: 18px;">
+                            Color
+                        </p>
+                        <div class="row d-flex">
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #443742; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #846C5B; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CEA07E; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #EDD9A3; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #E2E8C0; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: white; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CB997E; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #DDBEA9; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #FFE8D6; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #B7B7A4; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #A5A58D; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #6B705C; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #FFE6A7; height: 30px; width: 30px;"></button>
+                          <button class="m-1 border border-sucess border-opacity-75 rounded-circle" style="background-color: #CC9F69; height: 30px; width: 30px;"></button>
+                        </div>
+                      </div>
+                      <!-- PRODUCTOS DESTACADOS -->
                       <div class="row">
                         <p class="h5 pt-3 ps-3" style="font-size: 25px;">
                             Destacados
@@ -230,9 +418,24 @@
                                   </div> 
                               </div>
                           </div>
-                      </div> 
+                      </div>
                  </div>
-                 <div class="col-9 container-fluid d-flex flex-wrap justify-content-between pt-5">
+                 <!-- PRODUCTOS -->
+                 <div class="col-9 container-fluid d-flex flex-wrap justify-content-between pt-2">
+                  <!-- ORDENAR POR : -->
+                  <div class="container mb-3 d-flex justify-content-end">
+                    <div class="form-floating" style="width: 250px;">
+                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Más relevantes</option>
+                        <option value="1">Mayor precio</option>
+                        <option value="2">Menor precio</option>
+                        <option value="3">A - Z</option>
+                        <option value="4">Z - A</option>
+                        <option value="5">Más vendido</option>
+                      </select>
+                      <label for="floatingSelect">Ordenar por :</label>
+                    </div>
+                  </div>
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
@@ -275,7 +478,7 @@
                            
                           </div>
                           <div class="product-content">
-                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);">Pantalón de mezclilla</a></h3>
+                              <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714); font-size: 20px;">Pantalón de mezclilla</a></h3>
                               <span class="price">$4.380</span>
                           </div>
                       </div>
@@ -555,7 +758,7 @@
                               <span class="price">$4.780</span>
                           </div>
                       </div>
-                      <div class="product-grid2" style="height: 350px;">
+                      <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
                                 <img class="pic-1" src="./img/producto15.png" style="height: 330px  ;">
@@ -577,6 +780,26 @@
                               <h3 class="title"><a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.714);font-size: 20px;">Abrigo Checkbo daffle</a></h3>
                               <span class="price">$6.800</span>
                           </div>
+                      </div>
+                      <!-- DIVISIÓN DE PÁGINA -->
+                      <div class="container d-flex justify-content-center p-2">
+                        <nav aria-label="...">
+                          <ul class="pagination">
+                            <li class="page-item disabled">
+                              <a class="page-link">Anterior</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Siguiente</a>
+                            </li>
+                          </ul>
+                        </nav>
                       </div>
                 </div>
             </div>

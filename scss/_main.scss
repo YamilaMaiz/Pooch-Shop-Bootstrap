@@ -5,12 +5,13 @@
     margin: auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "grid1 grid2 grid3"
-        "grid1 grid4 grid5"
-        "grid6 grid7 grid8";
+        "grid1 grid2 grid3 grid4 grid5"
+        "grid6 grid7 grid8 grid9 grid10"
+        "grid11 grid12 grid13 grid14 grid15"
+        "grid16 grid17 grid18 grid19 grid20";
     gap: 0.5rem;
     width: 100%;
     max-width: 100%;
@@ -24,14 +25,14 @@
     }
     .grid2 {
         grid-area: grid2;
-        background-image: url(../img/arcoiris-grid.png);
+        background-image: url(../img/grid2.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
     .grid3 {
         grid-area: grid3;
-        background-image: url(../img/grid2.jpg);
+        background-image: url(../img/grid3.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -45,32 +46,119 @@
     }
     .grid5 {
         grid-area: grid5;
-        background-image: url(../img/corazon-grid.png);
+        background-image: url(../img/grid5.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
     .grid6 {
         grid-area: grid6;
-        background-image: url(../img/grid5.jpg);
+        background-image: url(../img/grid6.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
     .grid7 {
         grid-area: grid7;
-        background-image: url(../img/poch-grid.png);
+        background-image: url(../img/grid7.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
     .grid8 {
         grid-area: grid8;
-        background-image: url(../img/grid6.jpg);
+        background-image: url(../img/grid8.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
+    .grid9 {
+        grid-area: grid9;
+        background-image: url(../img/grid9.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid10 {
+        grid-area: grid10;
+        background-image: url(../img/grid10.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid11 {
+        grid-area: grid11;
+        background-image: url(../img/grid11.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid12 {
+        grid-area: grid12;
+        background-image: url(../img/grid12.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid13 {
+        grid-area: grid13;
+        background-image: url(../img/grid13.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid14 {
+        grid-area: grid14;
+        background-image: url(../img/grid14.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid15 {
+        grid-area: grid15;
+        background-image: url(../img/grid15.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid16 {
+        grid-area: grid16;
+        background-image: url(../img/grid16.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid17 {
+        grid-area: grid17;
+        background-image: url(../img/grid17.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid18 {
+        grid-area: grid18;
+        background-image: url(../img/grid18.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid19 {
+        grid-area: grid19;
+        background-image: url(../img/grid19.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid20 {
+        grid-area: grid20;
+        background-image: url(../img/grid20.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+.envio-medias {
+    display: none;
 }
 
 /** INICIO SESIÓN **/
@@ -196,25 +284,9 @@
 .product-grid2 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-22px;z-index:-1}
 .product-grid2 .social li a:hover:after,.product-grid2 .social li a:hover:before{opacity:1}
 .product-grid2:hover .product-new-label{opacity:0}
-
-
-/** MEDIA QUERIES **/
-
-/* GRID INDEX */
-@media(max-width:1335px){
-    .grid7{
-        background-image: url(../img/poch-grid2.png);
-    }
+.filtro-desplegable {
+    display: none;
 }
-@media(max-width:1025px){
-    .grid5{
-        background-image: url(../img/corazon-grid2.png);
-    }
-}
-
-/* PRODUCTOS */
-@media screen and (max-width:990px){
-    .product-grid2{
-        margin-bottom:30px
-    }
+.orden {
+    display: none;
 }
