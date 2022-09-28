@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo-pagina.png">
     <title>Productos - PoochShop</title>
     <meta name="keywords" content="Pet Shop, Mascotas, Ropa para mascotas, Accesorios para mascotas, Alimentos,">
     <script src="https://kit.fontawesome.com/5e7ea5dc2c.js" crossorigin="anonymous"></script>
@@ -14,9 +15,9 @@
     <header>
       <!-- MENÚ DE NAVEGACIÓN -->
         <section>
-          <nav class="navbar nav-bg navbar-expand-lg p-0">
+          <nav class="navbar nav-bg navbar-expand-lg p-0" style="background-color: white;">
             <div class="container-fluid mt-3 mb-3">
-              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="Logo Pooch Shop" style="height: 40px;"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,11 +30,11 @@
                     <div class="shop_btn btn-group">
                         <button type="button" class="btn text-secondary"><a href="./mas-informacion.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">+Info</a></button>
                         <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
+                          <span class="visually-hidden"></span>
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="./mas-informacion.html">Preguntas frecuentes</a></li>
-                          <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
+                          <li><a class="dropdown-item" href="#">Envíos y retiros</a></li>
                           <li><a class="dropdown-item" href="#">Devoluciones</a></li>
                           <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
                         </ul>
@@ -83,8 +84,30 @@
         </section>
     </header>
     <main>
+      <!-- CAROUSEL -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner pt-5 mt-5">
+          <div class="carousel-item active">
+            <img src="./img/carousel1.png" class="d-block w-100" alt="Publicidad 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carousel2.png" class="d-block w-100" alt="Publicidad 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carousel3.png" class="d-block w-100" alt="Publicidad 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <!-- CATEGORIAS PRODUCTOS TEXTO-->
-        <section class="container-fluid p-5 container-shop">
+        <section class="container-fluid ps-5 pb-5 pe-5 pt-2 container-shop m-0 ">
             <div class="filtro-desplegable row flex-nowrap align-items-center">
               <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-filter pe-1"></i>Filtros</button>
 
@@ -96,8 +119,8 @@
                 <div class="offcanvas-body">
                   <div>
                     <div class="row">
-                      <p class="h5 pt-3 ps-3" style="font-size: 25px;">
-                          Categorias
+                      <p class="h5 ps-3" style="font-size: 25px;">
+                          Categorías
                       </p>
                   </div>
                   <!-- CATEGORIAS PRODUCTOS -->
@@ -106,7 +129,7 @@
                       <!-- Default checked radio -->
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                        <label class="form-check-label" for="flexRadioDefault2">Todas las categorias</label>
+                        <label class="form-check-label" for="flexRadioDefault2">Todas las categorías</label>
                       </div>
                       <!-- Default radio -->
                       <div class="form-check">
@@ -127,7 +150,7 @@
                         </div>
                       <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                          <label class="form-check-label" for="flexRadioDefault1">Camas y Moises</label>
+                          <label class="form-check-label" for="flexRadioDefault1">Camas y Moisés</label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
@@ -156,7 +179,7 @@
                   </div>
                   <div class="container-fluid">
                       <div class="card-body">
-                        <input type="range" class="custom-range" min="0" max="100" name="" style="width: 250px;">
+                        <input type="range" class="custom-range" min="0" max="100" name="" style="width: 310px;">
                         <div class="d-flex form-row pe-1">
                           <div class="form-group">
                             <label>Min</label>
@@ -217,11 +240,11 @@
                 </div>
               </div>
             </div>
-            <div class="row flex-nowrap">
+            <div class="row flex-nowrap border-top border-2">
                 <div class="col-3 container_shop d-flex flex-column">
                     <div class="row">
                         <p class="h5 pt-3 ps-3" style="font-size: 25px;">
-                            Categorias
+                            Categorías
                         </p>
                     </div>
                     <!-- CATEGORIAS PRODUCTOS -->
@@ -230,7 +253,7 @@
                         <!-- Default checked radio -->
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                          <label class="form-check-label" for="flexRadioDefault2">Todas las categorias</label>
+                          <label class="form-check-label" for="flexRadioDefault2">Todas las categorías</label>
                         </div>
                         <!-- Default radio -->
                         <div class="form-check">
@@ -251,7 +274,7 @@
                           </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                            <label class="form-check-label" for="flexRadioDefault1">Camas y Moises</label>
+                            <label class="form-check-label" for="flexRadioDefault1">Camas y Moisés</label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
@@ -421,7 +444,7 @@
                       </div>
                  </div>
                  <!-- PRODUCTOS -->
-                 <div class="col-9 container-fluid d-flex flex-wrap justify-content-between pt-2">
+                 <div class="col-9 container-fluid d-flex flex-wrap justify-content-around pt-2">
                   <!-- ORDENAR POR : -->
                   <div class="container mb-3 d-flex justify-content-end">
                     <div class="form-floating" style="width: 250px;">
@@ -439,8 +462,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto1.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto1-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto1.png" alt="Producto 1">
+                                <img class="pic-2" src="./img/producto1-2.png" style="height: 330px ;" alt="Producto 1-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -462,8 +485,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto2.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto2-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto2.png" alt="Producto 2">
+                                <img class="pic-2" src="./img/producto2-2.png" alt="Producto 2-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -485,8 +508,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto3.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto3-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto3.png" alt="Producto 3">
+                                <img class="pic-2" src="./img/producto3-2.png" alt="Producto 3-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -508,8 +531,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto4.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto4-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto4.png" alt="Producto 4">
+                                <img class="pic-2" src="./img/producto4-2.png" alt="Producto 4-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -531,8 +554,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto5.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto5-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto5.png" alt="Producto 5">
+                                <img class="pic-2" src="./img/producto5-2.png" alt="Producto 5-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -554,8 +577,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto6.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto6-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto6.png" alt="Producto 6">
+                                <img class="pic-2" src="./img/producto6-2.png" alt="Producto 6-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -577,8 +600,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto7.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto7-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto7.png" alt="Producto 7">
+                                <img class="pic-2" src="./img/producto7-2.png" alt="Producto 7-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -600,8 +623,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto8.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto8-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto8.png" alt="Producto 8">
+                                <img class="pic-2" src="./img/producto8-2.png" alt="Producto 8-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -623,8 +646,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto9.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto9-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto9.png" alt="Producto 9">
+                                <img class="pic-2" src="./img/producto9-2.png" alt="Producto 9-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -646,8 +669,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto10.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto10-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto10.png" alt="Producto 10">
+                                <img class="pic-2" src="./img/producto10-2.png" alt="Producto 10-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -669,8 +692,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto11.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto11-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto11.png" alt="Producto 11">
+                                <img class="pic-2" src="./img/producto11-2.png" alt="Producto 11-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -692,8 +715,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto12.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto12-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto12.png" alt="Producto 12">
+                                <img class="pic-2" src="./img/producto12-2.png" alt="Producto 12-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -715,8 +738,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto13.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto13-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto13.png" alt="Producto 13">
+                                <img class="pic-2" src="./img/producto13-2.png" alt="Producto 13-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -738,8 +761,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto14.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto14-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto14.png" alt="Producto 14">
+                                <img class="pic-2" src="./img/producto14-2.png" alt="Producto 14-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -761,8 +784,8 @@
                       <div class="product-grid2" style="height: 430px;">
                         <div class="product-image2">
                             <a href="#">
-                                <img class="pic-1" src="./img/producto15.png" style="height: 330px  ;">
-                                <img class="pic-2" src="./img/producto15-2.png" style="height: 330px ;">
+                                <img class="pic-1" src="./img/producto15.png" alt="Producto 15">
+                                <img class="pic-2" src="./img/producto15-2.png" alt="Producto 15-2">
                             </a>
                             <ul class="social">
                                 <li><a href="./cama-moderna.html" data-tip="Vista rápida"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -859,7 +882,7 @@
         </section>
         <!-- Section: Social media -->
         <section class="container-fluid d-flex justify-content-center align-items-center mb-4">
-          <img src="./img/logo.png" style="height: 40px;" alt="">
+          <img src="./img/logo.png" style="height: 40px;" alt="Logo Pooch Shop">
         </section>
       </div>
       <!-- Grid container -->

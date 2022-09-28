@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo-pagina.png">
     <title>Pooch Shop</title>
-    <meta name="description" content="Esta es la tienda online de Pooch Shop! Ingresá y conocé nuestra amplia variedad de productos.">
+    <meta name="description" content="¡Esta es la tienda online de Pooch Shop! Ingresa y conoce nuestra amplia variedad de productos.">
     <meta name="keywords" content="Pet Shop, Mascotas, Ropa para mascotas, Accesorios para mascotas, Alimentos">
     <script src="https://kit.fontawesome.com/5e7ea5dc2c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -16,15 +17,16 @@
     <header>
         <section class="bg-index d-flex container-bg">
             <div class="d-flex letra flex-column justify-content-center ps-4">
-                <h1>Encontra los mejores productos para tu peludo a tan solo un</h1>
+                <h1>Encontrá los mejores productos para tu peludo a tan solo un</h1>
                 <div>
                     <button type="button" class="btn btn-light mt-3" style="height: 40px; width: 100px;">Click</button>
                 </div>
             </div>
         </section>
-        <nav class="navbar nav-bg navbar-expand-lg p-0">
+        <section>
+          <nav class="navbar nav-bg navbar-expand-lg p-0" style="background-color: white;">
             <div class="container-fluid mt-3 mb-3">
-              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" style="height: 40px;"></a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="Logo Pooch Shop" style="height: 40px;"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,11 +39,11 @@
                     <div class="shop_btn btn-group">
                         <button type="button" class="btn text-secondary"><a href="./mas-informacion.html" class="text-secondary" style="color: rgba(0, 0, 0, 0.601);">+Info</a></button>
                         <button type="button" class="btn dropdown-toggle dropdown-toggle-split shop_btn" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
+                          <span class="visually-hidden"></span>
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="./mas-informacion.html">Preguntas frecuentes</a></li>
-                          <li><a class="dropdown-item" href="#">Envios y retiros</a></li>
+                          <li><a class="dropdown-item" href="#">Envíos y retiros</a></li>
                           <li><a class="dropdown-item" href="#">Devoluciones</a></li>
                           <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
                         </ul>
@@ -88,11 +90,25 @@
               </div>
             </div>
           </nav>
+        </section>
     </header>
     <main>
+      <!-- COOKIE -->
+      <div class="container-fluid mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-10 p-3">
+              <div class="d-flex flex-row justify-content-between align-items-center p-3 alert alert-dismissible fade show border border-secondary">
+                  <div class="d-flex flex-row align-items-center">
+                      <div class="ml-2 mr-2"><span>Al navegar por este sitio <b>aceptás el uso de cookies</b> para agilizar tu experiencia de compra.</span></div>
+                  </div>
+                  <div class=""><button type="button" class="btn btn-dark"  data-bs-dismiss="alert" aria-label="Close">Aceptar</button></div>
+              </div>
+          </div>
+        </div>
+      </div>
       <!-- NUESTRAS CATEGORIAS TEXTO INDEX -->
         <section class="container-fluid">
-          <div class="d-flex justify-content-center mt-5 mb-4">
+          <div class="d-flex justify-content-center mb-4">
             <h2>Nuestras categorias</h2>
         </div>
             <!-- NUESTRAS CATEGORIAS INDEX -->
@@ -101,13 +117,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/ropa.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/ropa.jpg" class="img-fluid rounded-start" alt="Ejemplo de ropa">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Ropa</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <p class="card-text">Nuestros productos están hechos de fibras naturales que ayudan a regular la temperatura corporal y mantienen a tu perro abrigado o fresco según sea necesario.</p>
                             </div>
                           </div>
                         </div>
@@ -117,13 +132,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/juguetes.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/juguetes.jpg" class="img-fluid rounded-start" alt="Ejemplo de juguetes">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Jueguetes</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 class="card-title">Juguetes</h5>
+                              <p class="card-text">Nuestros juguetes están fabricados con una gran variedad de tejidos y formas. Solo utilizamos materiales de alta calidad para mantener a su mascota segura, cómoda y entretenida.</p>
                             </div>
                           </div>
                         </div>
@@ -133,13 +147,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/camas.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/camas.jpg" class="img-fluid rounded-start" alt="Ejemplo de camas">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Camas y Moises</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 class="card-title">Camas y Moisés</h5>
+                              <p class="card-text">Nuestras camas están diseñadas específicamente para los miembros peludos de tu familia, para que puedan descansar como se merecen. También aptos para lavarropas.</p>
                             </div>
                           </div>
                         </div>
@@ -151,13 +164,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/comederos.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/comederos.jpg" class="img-fluid rounded-start" alt="Ejemplo de comederos">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Comederos</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <p class="card-text">Nuestros tazones de comida para mascotas están hechos de plástico sin BPA, son fáciles de limpiar, aptos para lavavajillas y pueden ser utilizados tanto por perros como por gatos.</p>
                             </div>
                           </div>
                         </div>
@@ -167,13 +179,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/collar.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/collar.jpg" class="img-fluid rounded-start" alt="Ejemplo de collares">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Collares, Pretales y Corres</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 class="card-title">Collares, Pretales y Correas</h5>
+                              <p class="card-text">Nuestros productos están diseñados para ser duraderos y cómodos al mismo tiempo. Tanto si tu perro es pequeño como grande, estos productos lo mantendrán seguro y feliz.</p>
                             </div>
                           </div>
                         </div>
@@ -183,13 +194,12 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./img/accesorios.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./img/accesorios.jpg" class="img-fluid rounded-start" alt="Ejemplo de accesorios">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Accesorios</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <p class="card-text">Nuestra gama de accesorios para mascotas están diseñadas para ofrecer todo lo que tu mascota necesita para crear el ambiente perfecto en su hogar al igual que en exterior.</p>
                             </div>
                           </div>
                         </div>
@@ -232,18 +242,36 @@
         <!-- SUSCRIPCIÓN INDEX -->
         <section class="container mt-5">
             <div class="d-flex justify-content-center mt-3 mb-3">
-                <h2>REGISTRATE AL NEWSLETTER</h2>
+                <h2>¡REGISTRATE AL NEWSLETTER</h2>
             </div>
             <div class="d-flex justify-content-center mt-3 mb-3">
-                <h5 class="descuento-text">y recibe un cupon de 20% de descuento en tu primera compra!</h5>
+                <h5 class="descuento-text">y recibe un cupón de 20% de descuento en tu primera compra!</h5>
             </div>
             <div class="d-flex justify-content-center mt-3 mb-3">
                 <div class=" container-sm ms-5 me-5 ">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Direccion de correo electronico">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Dirección de correo electrónico">
                   </div>
             </div>
             <div class="d-flex justify-content-center mt-3 mb-3">
-                <button type="button" class="suscribe btn">Suscribirme</button>
+              <!-- Button trigger modal -->
+              <button type="button " class="btn suscribe" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Suscribite
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"><i class="fa-regular fa-circle-check pe-2"></i> ¡Suscripción exitosa!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Gracias por suscribirte a nuestro Newsletter. Esperamos puedas aprovechar nuestras ofertas semanales.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </section>
         <!-- ENVIO, COMPRA y PROTEGER -->
@@ -252,15 +280,15 @@
             <div class="container text-center mb-5 mt-5">
               <div class="row">
                 <div class="d-flex flex-column col align-items-center">
-                  <img src="./img/camion.png" alt="" class="envio">
+                  <i class="fa-solid fa-truck"></i>
                   ENVÍOS A TODO EL PAÍS <br> COMPRÁ SIN SALIR DE TU CASA
                 </div>
                 <div class="d-flex flex-column col order-5 align-items-center">
-                  <img src="./img/tarjeta.png" alt="" class="envio">
+                  <i class="fa-solid fa-lock"></i>
                   COMPRA SEGURA <br> PROTEGEMOS TUS DATOS
                 </div>
                 <div class="d-flex flex-column col order-1 align-items-center">
-                  <img src="./img/candado.png" alt="" class="envio">
+                  <i class="fa-solid fa-credit-card"></i>
                   3 y 6 CUOTAS SIN INTERÉS <br> CON TODAS LAS TARJETAS
                 </div>
               </div>
@@ -271,7 +299,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <div class="d-flex flex-column col align-items-center">
-                  <img src="./img/camion.png" alt="" class="envio">
+                  <i class="fa-solid fa-truck"></i>
                   ENVÍOS A TODO EL PAÍS <br> COMPRÁ SIN SALIR DE TU CASA
                 </div>
                 <div class="carousel-caption d-none d-md-block">
@@ -279,7 +307,7 @@
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <div class="d-flex flex-column col order-5 align-items-center">
-                  <img src="./img/tarjeta.png" alt="" class="envio">
+                  <i class="fa-solid fa-lock"></i>
                   COMPRA SEGURA <br> PROTEGEMOS TUS DATOS
                 </div>
                 <div class="carousel-caption d-none d-md-block">
@@ -287,7 +315,7 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex flex-column col order-1 align-items-center">
-                  <img src="./img/candado.png" alt="" class="envio">
+                  <i class="fa-solid fa-credit-card"></i>
                   3 y 6 CUOTAS SIN INTERÉS <br> CON TODAS LAS TARJETAS
                 </div>
                 <div class="carousel-caption d-none d-md-block">
@@ -358,7 +386,7 @@
         </section>
         <!-- Section: Social media -->
         <section class="container-fluid d-flex justify-content-center align-items-center mb-4">
-          <img src="./img/logo.png" style="height: 40px;" alt="">
+          <img src="./img/logo.png" style="height: 40px;" alt="Logo Pooch Shop">
         </section>
       </div>
       <!-- Grid container -->
@@ -371,7 +399,6 @@
       </div>
       <!-- Copyright -->
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

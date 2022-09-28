@@ -174,13 +174,6 @@
 }
 
 /** MÁS INFORMACIÓN **/
-.bg-info{
-    background-image: url(../img/fondo-patitas.jpg) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
 .contenedor-info{
     margin-top: 110px;
     margin-bottom: 30px;
@@ -214,6 +207,7 @@
         .pic-1{
             opacity:1;
             transition:all .5s;
+            height: 330px;
         }
         .pic-2{
             width:100%;
@@ -222,6 +216,7 @@
             position:absolute;
             top:0;left:0;
             transition:all .5s;
+            height: 330px;
         }
         .social{
             padding:0;
