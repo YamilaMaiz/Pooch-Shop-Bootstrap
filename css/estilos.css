@@ -199,6 +199,9 @@
       .product-grid2 .product-image2 a img {
         width: 100%;
         height: auto; }
+    .product-grid2 .product-image2 .lateral {
+      height: 250px !important;
+      padding: 10px; }
     .product-grid2 .product-image2 .pic-1 {
       opacity: 1;
       transition: all .5s;
@@ -240,6 +243,9 @@
             background-color: #3498db;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .product-grid2 .product-image2 .product-content {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.714);
+      font-size: 20px;
       padding: 20px 10px;
       text-align: center; }
       .product-grid2 .product-image2 .product-content .title {

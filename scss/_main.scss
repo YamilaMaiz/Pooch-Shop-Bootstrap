@@ -204,6 +204,10 @@
                 height:auto;
             }
         }
+        .lateral {
+            height: 250px !important;
+            padding: 10px;
+        }
         .pic-1{
             opacity:1;
             transition:all .5s;
@@ -250,6 +254,9 @@
             }
         }
         .product-content{
+            text-decoration: none; 
+            color: rgba(0, 0, 0, 0.714);
+            font-size: 20px;
             padding:20px 10px;
             text-align:center;
             .title{
