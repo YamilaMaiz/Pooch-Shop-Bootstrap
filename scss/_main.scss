@@ -179,6 +179,8 @@
 }
 .container_form{
     margin-top: 100px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.821);
 }
 
 /** MÁS INFORMACIÓN **/
@@ -198,6 +200,12 @@
     .container_shop{
         width: 300px ;
     }
+}
+.talle {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 1px;
 }
 .product-grid2{
     font-family:'Open Sans',sans-serif;
